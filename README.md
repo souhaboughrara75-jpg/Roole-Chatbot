@@ -25,7 +25,6 @@ Dans `config.py` ou `config/llm/settings.py`, vous pouvez ajuster :
 ---
 
 ## 🏃 Lancement
-## Méthode 1 
 
 1. Créez et activez votre environnement virtuel :
 
@@ -58,7 +57,7 @@ streamlit run chatbot_app.py
 
 ⁠ ## 🎯 Utilisation
 
-* Posez vos questions directement dans le chat######
+* Posez vos questions directement dans le chat
 * Les réponses sont générées selon vos instructions système et paramètres de configuration
 ---
 
