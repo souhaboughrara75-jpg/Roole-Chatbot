@@ -7,7 +7,7 @@ class LLMSettings(BaseSettings):
     # HuggingFace settings
     hf_token: str = Field(alias="HUGGINGFACEHUB_API_TOKEN")
     llm_model_id: str = Field(default="deepseek-ai/DeepSeek-R1", alias="MODEL_ID")    
-    max_new_tokens: int = 1024
+    max_new_tokens: int = 2048
     temperature: float = 0.2
     top_p: float = 0.7
     repetition_penalty: float = 1.1
