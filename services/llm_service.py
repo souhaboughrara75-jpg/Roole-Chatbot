@@ -12,9 +12,8 @@ logger = logging.getLogger(__name__)
 class LLMService:
     """LLM service using HuggingFace API via direct HTTP requests"""
 
-    def __init__(self):
-        # Basic settings
-        self.hf_token = llm_settings.hf_token
+    def __init__(self, hf_token: Optional[str] = None):
+        self.hf_token = hf_token or llm_settings.hf_token
         self.model_id = llm_settings.llm_model_id
         self.max_new_tokens = llm_settings.max_new_tokens
         self.temperature = llm_settings.temperature
@@ -144,5 +143,3 @@ class LLMService:
     def get_functions(self) -> List[Dict]:
         return self.functions
 
-
-llm_service = LLMService()
